@@ -1,191 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,200;1,400;1,500;1,900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,700;0,900;1,200;1,400;1,500;1,900&display=swap"
+      rel="stylesheet"/>
     <title>Healthy Breeze</title>
-</head>
-<body class="container-fluid">
+  </head>
+  <body class="container-fluid">
+    
+    <nav class="nav-bar">
+      <div id="logo">
+        <img class="logo" src="./images/logo.png" alt="logo-healthy-breeze" />
+      </div>
+      <div id="links">
+        <ul class="nav justify-content-center">
+          <li class="nav-item">
+            <a class="nav-link color-link" href="./index.html">Home</a>
+          </li>
 
-    <nav class=" nav-bar">
-        <div id="logo">
-            <img class="logo" src="./images/logo.png" alt="logo-healthy-breeze">
-        </div>
-        <div id="links">
-            <ul class="nav justify-content-center ">
-                <li class="nav-item">
-                  <a class="nav-link color-link" href="./index.html">Home</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link color-link" href="./products.html">Products</a>
-                </li>
-                
-                <li class="nav-item">
-                  <a class="nav-link color-link" href="./contact.html">Contact</a>
-                </li>
-                
-              </ul>
-        </div>
-        <div id="languages" class="form-check form-switch">
-            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
-            <label class="form-check-label" for="flexSwitchCheckChecked">En/Lt</label>
-        </div>
+          <li class="nav-item">
+            <a class="nav-link color-link" href="./products.html">Products</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link color-link" href="./contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="languages" class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="flexSwitchCheckChecked"
+          checked
+        />
+        <label class="form-check-label" for="flexSwitchCheckChecked"
+          >En/Lt</label
+        >
+      </div>
     </nav>
     <header class="carousel-healthy">
+      
       <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-        </div> 
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1">
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            aria-label="Slide 2">
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3">
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="3"
+            aria-label="Slide 4">
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="4"
+            aria-label="Slide 5">
+          </button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
             <div class="imagen-container">
-              <img src="./images/CIRUGIA.jpg" class="d-block w-100 img-carousel" alt="...">
+              <img
+                src="./images/CIRUGIA.jpg"
+                class="d-block w-100 img-carousel"
+                alt="..."/>
               <div class="text-supper">
-                <h1>Ecoviox is the best ally in medicine.</h1>
-                <p>The EV-O Digital System removes 99.9% of viruses and bacteria from the air and surfaces.</p>
-                <button type="button" data-target="products.html" class="btn btn-outline-dark button-supper">CLICK HERE!</button> 
+                <h2>Ecoviox is the best ally in medicine.</h2>
+                <p>
+                  The EV-O Digital System removes 99.9% of viruses and bacteria
+                  from the air and surfaces.
+                </p>
+                <button
+                  type="button"
+                  data-target="products.html"
+                  class="btn btn-outline-dark button-supper">
+                  CLICK HERE!
+                </button>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="imagen-container">
-              <img src="./images/CONFERENCIA.jpg" class="d-block w-100 img-carousel" alt="...">
+              <img
+                src="./images/CONFERENCIA.jpg"
+                class="d-block w-100 img-carousel"
+                alt="..."/>
               <div class="text-supper">
-                <h1>Ecoviox is the best solution to purify your environment.</h1>
+                <h2>
+                  Ecoviox is the best solution to purify your environment.
+                </h2>
                 <p>Customers return to where they feel cared for.</p>
-                <button type="button" data-target="products.html" class="btn btn-outline-dark button-supper">CLICK HERE!</button>
+                <button
+                  type="button"
+                  data-target="products.html"
+                  class="btn btn-outline-dark button-supper">
+                  CLICK HERE!
+                </button>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="imagen-container">
-              <img src="./images/MUJER CASA.jpg" class="d-block w-100 img-carousel" alt="...">
+              <img
+                src="./images/purifier-water.png"
+                class="d-block w-100 img-carousel"
+                alt="..."/>
               <div class="text-supper">
-                <h1>Specialists in creating biosecure environments.</h1>
+                <h2>Water Purifier Machine.</h2>
+                <p>Multifunctional 6-stage temperature controlled..</p>
+                <button
+                  type="button"
+                  data-target="products.html"
+                  class="btn btn-outline-dark button-supper">
+                  CLICK HERE!
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="imagen-container">
+              <img
+                src="./images/MUJER CASA.jpg"
+                class="d-block w-100 img-carousel"
+                alt="..."/>
+              <div class="text-supper">
+                <h2>Specialists in creating biosecure environments.</h2>
                 <p>Meet our purifiers.</p>
-                <button type="button" data-target="products.html" class="btn btn-outline-dark button-supper">CLICK HERE!</button>  
+                <button
+                  type="button"
+                  data-target="products.html"
+                  class="btn btn-outline-dark button-supper">
+                  CLICK HERE!
+                </button>
               </div>
             </div>
           </div>
           <div class="carousel-item">
             <div class="imagen-container">
-              <img src="./images/ODONTOLOGIA.jpg" class="d-block w-100 img-carousel" alt="...">
+              <img
+                src="./images/ODONTOLOGIA.jpg"
+                class="d-block w-100 img-carousel"
+                alt="..."/>
               <div class="text-supper">
-                <h1>Reduce risks for you and your patients</h1>
-                <p>EV technology keeps your practice free of microorganisms while you work.</p>
-                <button type="button" data-target="products.html" class="btn btn-outline-dark button-supper">CLICK HERE!</button>  
+                <h2>Reduce risks for you and your patients</h2>
+                <p>
+                  EV technology keeps your practice free of microorganisms while
+                  you work.
+                </p>
+                <button
+                  type="button"
+                  data-target="products.html"
+                  class="btn btn-outline-dark button-supper">
+                  CLICK HERE!
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      
     </header>
+    <h1 class="titleh1">Air Purifier -&nbsp;<span id="blue-color"> Water Purifier</span> </h1>
+
+    <section class="five-tech-container container">
+      <div class="five-tech-title">
+        <h2 class="sub-title-color">These are the five eV technologies</h2>
+      </div>
+      <div class="five-tech">
+        <ul>
+          <li id="hepa">HEPA</li>
+          <li id="ca">CA</li>
+          <li id="uvc">UVC</li>
+          <li id="i-">I-</li>
+          <li id="o3">O3</li>
+        </ul>
+      </div>
+      <div></div>
+    </section>
+
     <section class="benefits">
+      
       <div class="benefits-title">
-        <h2>Our Benefits.</h2>
-      </div> 
+        <h2 class="sub-title-color">Our Benefits.</h2>
+      </div>
       <div class="benefit-1">
-        <div class="logo-ben-container ">
-          <img class="logo-benefits desvanecer" src="./images/POSITIVO NEGATIVO.png" alt="">
+        <div class="logo-ben-container">
+          <img
+            class="logo-benefits desvanecer"
+            src="./images/POSITIVO NEGATIVO.png"
+            alt=""/>
           <div class="ben-txt">
             <h4>The negative becomes positive.</h4>
-            <p>Through an air ionization process, particles are removed from space through negative ions that adhere to positive ions (dust, bacteria and viruses).
-              The ions produce a chemical reaction in the cell membrane that inactivates the virus.
+            <p>
+              Through an air ionization process, particles are removed from
+              space through negative ions that adhere to positive ions (dust,
+              bacteria and viruses). The ions produce a chemical reaction in the
+              cell membrane that inactivates the virus.
             </p>
           </div>
-        </div> <br>
+        </div>
+        <br />
       </div>
       <div class="benefit-2">
-        <div class="logo-ben-container ">
-          <p class="ben-2"> <span id="three">3</span> to <span id="six">6</span> min.</p>
+        <div class="logo-ben-container">
+          <p class="ben-2">
+            <span id="three">3</span> to <span id="six">6</span> min.
+          </p>
           <div class="ben-txt">
             <h4>As fast as it is effective.</h4>
             <p>Purification time for environments from 60 to 180 m2.</p>
           </div>
-        </div> <br>
+        </div>
+        <br />
       </div>
       <div class="benefit-3">
-        <div class="logo-ben-container ">
-          <img class="logo-benefits desvanecer" src="./images/O3.png" alt="">
-          <div class="ben-txt" >
+        <div class="logo-ben-container">
+          <img class="logo-benefits desvanecer" src="./images/O3.png" alt="" />
+          <div class="ben-txt">
             <h4>Just rest.</h4>
-            <p>Night mode does the rest.The programmed ozonation process is activated to completely sterilize the space and surfaces while there is no movement of people in the place.
+            <p>
+              Night mode does the rest.The programmed ozonation process is
+              activated to completely sterilize the space and surfaces while
+              there is no movement of people in the place.
             </p>
           </div>
-        </div> <br>
+        </div>
+        <br />
       </div>
-     
     </section>
     <main class="main-section">
       <div class="item about-us">
-        <h3>We care about you.</h3> <br>
-        <p>At Healthy Breeze we care about providing the latest technologies available to create biosafe environments. 
-          That is why we created a strategic alliance with ecoViox, 
-          to bring these technologies to the Baltic countries to improve the air in any space that is required.</p>
+        <h3 class="sub-title-color">We care about you.</h3>
+        <br />
+        <p>
+          At Healthy Breeze we care about providing the latest technologies
+          available to create biosafe environments. That is why we created a
+          strategic alliance with ecoViox, to bring these technologies to the
+          Baltic countries to improve the air in any space that is required.
+        </p>
       </div>
       <div class="item action-btns">
-        <button type="button" id="buttonContactUs" class="main-btns btn btn-outline-success rounded-pill">CONTACT US</button>
-        <button type="button" id="buttonProducts"  class="main-btns btn btn-outline-danger rounded-pill">PRODUCTS</button>
+        <button
+          type="button"
+          id="buttonContactUs"
+          class="main-btns btn btn-outline-success rounded-pill"
+        >
+          CONTACT US
+        </button>
+        <button
+          type="button"
+          id="buttonProducts"
+          class="main-btns btn btn-outline-danger rounded-pill"
+        >
+          PRODUCTS
+        </button>
       </div>
       <div class="item main-image">
-        <img class="happy-fam" src="./images/img-family2.jpg" alt="Happy-Family">
+        <img
+          class="happy-fam"
+          src="./images/img-family2.jpg"
+          alt="Happy-Family"
+        />
       </div>
-      
     </main>
 
     <footer class="footer">
-      
-      
-        <ul class="social_icon">
-            <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
-            
-            <li><a href=""><ion-icon name="logo-instagram"></ion-icon></a></li>
-            
-        </ul>
-        <ul class="menu" >
-            <li><a href="">Home</a></li>
-            <li><a href="">Products</a></li>
-            
-        </ul>
+      <ul class="social_icon">
+        <li>
+          <a href=""><ion-icon name="logo-facebook"></ion-icon></a>
+        </li>
 
-        <ul class="contact">
+        <li>
+          <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li><a href="">Home</a></li>
+        <li><a href="">Products</a></li>
+      </ul>
 
-          <li>Carlos N Araujo</li>
-          <li>+(370)621 48793</li>
-          <li>+(370)624 88791</li><br>
-          <li>contact@healthybrezze.lt</li>
-          <li>Rodūnios kl. 11, 02189 Vilnius, Lt 🇱🇹</li>
+      <ul class="contact">
+        <li>Carlos N Araujo</li>
+        <li>+(370)621 48793</li>
+        <li>+(370)624 88791</li>
+        <br />
+        <li>contact@healthybrezze.lt</li>
+        <li>Rodūnios kl. 11, 02189 Vilnius, Lt 🇱🇹</li>
+      </ul>
 
-
-        </ul>
-        
-        <p>Made with <strong> love ♥️</strong> by Goban</p>
-      
-
+      <p>Made with <strong> love ♥️</strong> by Goban</p>
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="app.js"></script>  
-    <script src="index.js"></script>  
-</body>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous">
+    </script>
+    <script src="app.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>

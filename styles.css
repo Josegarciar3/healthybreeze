@@ -54,13 +54,18 @@
     margin-top: 30px;
 }
 
-h1{
+h2{
   font-family: Montserrat, sans-serif ;
   font-weight: 700 !important;
 }
 p{
   font-family: Montserrat;
   font-weight: 400;
+}
+
+h1{
+  font-family: Montserrat, sans-serif ;
+  font-weight: 700 !important;
 }
 
 .img-carousel{
@@ -123,7 +128,9 @@ p{
     font-family: Montserrat;
     font-weight: 700 !important ;
   }
-  
+  .sub-title-color{
+    color: #6FA4D6 ;
+  }
 
   .main-image{
     grid-area: image;
@@ -176,17 +183,34 @@ p{
     grid-template-columns: 33% 33% 33%;
     height: auto;
     grid-template-areas: 
+
+    "h1 h1 h1"
     "title title title"
     "ben-1 ben-2 ben-3";
 
+  }
+
+  .titleh1{
+    grid-area: h1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+  }
+
+  #blue-color{
+    color: #73BADF;
   }
 
   .benefits-title{
     grid-area: title;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 100px;
+    color: #6FA4D6;
+    padding-left: 20px;
   }
   
   .benefit-1{
