@@ -207,22 +207,40 @@
     </header>
     <h1 class="titleh1">Air Purifier -&nbsp;<span id="blue-color"> Water Purifier</span> </h1>
 
-    <section class="five-tech-container container">
+    <section class="five-tech-container ">
       <div class="five-tech-title">
-        <h2 class="sub-title-color">These are the five eV technologies</h2>
+        <h2 class="sub-title-color">eV Technologies</h2>
       </div>
       <div class="five-tech">
-        <ul>
-          <li id="hepa">HEPA</li>
-          <li id="ca">CA</li>
-          <li id="uvc">UVC</li>
-          <li id="i-">I-</li>
-          <li id="o3">O3</li>
+        <ul class="five-tech-list">
+          <li class="list-item-tech" id="hepa"> <span class="item-tech" onclick="changeColor(this, 'description-hepa')">HEPA</span></li>
+          <li class="list-item-tech" id="ca"><span class="item-tech" onclick="changeColor(this, 'description-ca')">CA</span></li>
+          <li class="list-item-tech" id="uvc"><span class="item-tech" onclick="changeColor(this, 'description-uvc')">UVC</span></li>
+          <li class="list-item-tech" id="i-"><span class="item-tech" onclick="changeColor(this, 'description-i')">I-</span></li>
+          <li class="list-item-tech" id="o3"><span class="item-tech" onclick="changeColor(this, 'description-o3')">O3</span></li>
         </ul>
       </div>
-      <div></div>
-    </section>
+      <div class="description-container">
 
+        <div id="description-hepa"> <p><strong>Filter HEPA:</strong>The fiber mesh that these filters make up prevent the spread of bacteria and viruses. 
+          Its efficiency, greater than 99%, ensures a high level of protection against airborne diseases.</p> 
+        </div>
+        <div id="description-ca"><strong>Filtro de Carbón Activado:</strong>Filtro de Carbón Activado: Este compuesto se utiliza en la purificación de aire, agua y gases. 
+          Su utilización en nuestros equipos potencia la función de los filtros HEPA.
+        </div>  
+        <div id="description-uvc"><strong>Lámpara UVC / LED Germicida UVC:</strong>La función UVC elimina los microorganismos y destruye los atrapados en las barreras de los filtros, 
+          impidiendo que se formen colonias.
+        </div>  
+        <div id="description-i"><strong>Ionizador:</strong>Ionizador: Partículas cargadas negativamente se adhieren a las positivas (polvo, bacterias y virus) 
+          produciendo una reacción química en la membrana celular que inactiva los microorganismos.
+        </div>  
+        <div id="description-o3"><strong>Generador de O3:</strong>El proceso de ozonización sin presencia de personas se realiza con hasta 0.20 ppm de O3, 
+          generando una limpieza potente y una esterilización final que garantiza un resultado 100% efectivo
+        </div>  
+
+      </div>
+    </section>
+      
     <section class="benefits">
       
       <div class="benefits-title">

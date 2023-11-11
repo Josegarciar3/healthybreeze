@@ -51,11 +51,66 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
     
+   
 
 });
     
+ //five-tech color words
 
+ //  function changeColor(element, descriptionId){
+ 
+ //     let id = element.id;
+ 
+ //     let descriptionContainer = document.querySelector(".description-container");
+ 
+ //     let allDescriptions = descriptionContainer ? descriptionContainer.getElementsByClassName("description") :[];
+ 
+ //     for(let i = 0; i < allDescriptions.length; i++){
+ //         allDescriptions[i].style.display = 'none';
+ //     }
+ 
+ //     let specificDescription = document.getElementById(descriptionId);
+ //     if (specificDescription) {
+ //         specificDescription.style.display = "block";
+ //       }
+ //     const allItems = document.querySelectorAll('.item-tech');
+ 
+ //     allItems.forEach(item =>{
+ //         item.classList.remove('clicked');
+ //     });
+ 
+ //     element.classList.add('clicked');
+ 
+     
+ // }
 
+ function changeColor(element, descriptionId) {
+    // Obtén el ID directamente del elemento clickeado
+    let id = element.id;
+
+    // Oculta todas las descripciones
+    let allDescriptions = document.querySelectorAll('.description-container > div');
+    allDescriptions.forEach(description => {
+        description.style.display = 'none';
+    });
+
+    // Muestra la descripción específica
+    let specificDescription = document.getElementById(descriptionId);
+    if (specificDescription) {
+        specificDescription.style.display = "block";
+    }
+
+    // Remueve la clase 'clicked' de todos los elementos
+    const allItems = document.querySelectorAll('.item-tech');
+    allItems.forEach(item => {
+        item.classList.remove('clicked');
+    });
+
+    // Añade la clase 'clicked' al elemento clickeado
+    element.classList.add('clicked');
+}
+
+ 
     
 
    

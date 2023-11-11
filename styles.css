@@ -105,6 +105,66 @@ h1{
     background-color: #3A428B !important;
   }
 
+  .five-tech-container{
+    margin-top: 100px;
+    padding-left: 20px;
+  }
+
+  .list-item-tech{
+    list-style-type: none;
+  }
+  .item-tech{
+    font-size: 50px;
+    transition: color 0.3s;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+
+  #hepa :hover{
+    color: #73BADF ;
+    opacity: 1;
+  }
+  #ca :hover{
+    color: #73BADF ;
+    opacity: 1;
+  }
+  #uvc :hover{
+    color: #73BADF ;
+    opacity: 1;
+  }
+  #i- :hover{
+    color: #73BADF ;
+    opacity: 1;
+  }
+  #o3 :hover{
+    color: #73BADF ;
+    opacity: 1;
+  }
+
+  .item-tech.clicked{
+    color: #73BADF;
+    opacity: 1;
+  }
+
+  .five-tech-list{
+    display: flex;
+    gap: 55px;
+
+  }
+
+  .description-container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* border: 1px solid red; */
+    height: 200px;
+  }
+
+  .description-container > div:not(:first-child) {
+    display: none;
+
+  } 
+
   .main-section{
     display: grid;
     grid-template-columns: 60% 40%;
@@ -178,13 +238,12 @@ h1{
   }
 
   .benefits{
+    margin-top: 30px;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: 33% 33% 33%;
     height: auto;
     grid-template-areas: 
-
-    "h1 h1 h1"
     "title title title"
     "ben-1 ben-2 ben-3";
 
