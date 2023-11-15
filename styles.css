@@ -474,18 +474,20 @@ footer  p{
 
 /*Products Section*/
 
-.container-main-image{
-  /* border: black 2px dashed; */
-  margin-top: 30px;
+.container-video {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 50px;
+  
 }
-.main-purifier{
-  width: 85%;
-  height: 500px;
+
+video {
+  
+  width: 100%;
+  height: auto;
+  
 }
+
+
 
 .products-container {
   display: grid;
@@ -547,7 +549,7 @@ footer  p{
 
 
 .cat-des{
-  color: #3A428B;
+  color: #6FA4D6;
   height: 50px;
   padding-top: 15px;
 }
