@@ -7,6 +7,7 @@
     
 }
 
+
 #logo{
     /* border: 1px dashed red; */
     display: flex;
@@ -474,18 +475,50 @@ footer  p{
 
 /*Products Section*/
 
+.nav-bar-products{
+  display: grid;
+  grid-template-columns: 20% 60% 20%;
+  height: 100px;
+  z-index: 2;
+  position: relative;
+}
+
 .container-video {
   width: 100%;
-  margin-top: 50px;
-  overflow: hidden;
+  margin-top: -8%;
+  /* overflow: hidden; */
   position: relative;
-
+  z-index: 1;
 }
 
 video {
   width: 100%;
   height: auto;
-  clip: rect(500px, 150px, 150px, 1000px)
+  
+}
+
+.text-supper-video {
+   
+  position: absolute;
+  top: 200px;
+  left: 120px;
+  color: rgba(255, 255, 255, 0.5);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  font-family: Montserrat;
+  font-size: 60px;
+}
+
+.capa-blanca {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background-color: white;
+  opacity: 1; /* Ajusta la opacidad según sea necesario */
+  z-index: 0; /* Asegura que la capa blanca esté por encima del video */
 }
 
 
@@ -640,11 +673,7 @@ video {
 .certification-container{
   display: grid;
   gap: 5px;
-<<<<<<< HEAD
-  grid-template-columns: 50% 50%;
-=======
-  grid-template-columns: 40% 60%;
->>>>>>> 08f8fe53af9b310acd1dcd5aa2fcaa51e0c74b7f
+  grid-template-columns: 45% 55%;
   margin-top: 70px;
   grid-template-areas:
   "title title"
@@ -687,15 +716,13 @@ video {
   grid-area: cert;
   margin-top: 50px;
   /* border: 1px dashed rgb(205, 231, 53); */
-  
-  
 }
 
 #list-cert{
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-   
+  justify-content: center;
   align-items: center;
   width: 100%;
   margin-top: 20px;
@@ -719,6 +746,8 @@ video {
 .item-certification:hover{
   background-color: rgb(111, 164, 214, 0.3);
   transition: background-color 0.3s ease;
+  color: black;
+  cursor: pointer;
 }
 
 #safe-tech{
@@ -729,6 +758,7 @@ video {
 
 .safe-cont{
   margin: 0 30px;
+  padding-left: 30PX;
 }
 
 #image-safe{
