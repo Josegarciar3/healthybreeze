@@ -640,7 +640,11 @@ video {
 .certification-container{
   display: grid;
   gap: 5px;
+<<<<<<< HEAD
   grid-template-columns: 50% 50%;
+=======
+  grid-template-columns: 40% 60%;
+>>>>>>> 08f8fe53af9b310acd1dcd5aa2fcaa51e0c74b7f
   margin-top: 70px;
   grid-template-areas:
   "title title"
