@@ -773,77 +773,74 @@ video {
 
 /*CONTACT SECTION*/
 
-.contact-main-container {
-  margin-top: 100px;
-  margin-left: 200px !important;
-  
-}
-
-.contact-container{
-  width: 700px; /* Ancho de tu contenedor */
-  height: 500px; /* Alto de tu contenedor */
-  background-color: #fff; /* Color de fondo del contenedor */
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Definición de la sombra */
-  border-radius: 10px; /* Opcional: agregar bordes redondeados */
-  margin: 20px; /* Opcional: margen exterior */
-  padding: 20px; /* Opcional: espacio interior */
+.contact-main-container{
   display: grid;
-  grid-template-columns: 60% 40%;
+  gap:15px;
+  grid-template-columns: 50% 50%;
   grid-template-areas: 
-  "img-cont map"
-  "desc-cont map"
-  "btn-cont map";
-  gap: 5px;
+  "title .."
+  "cont form";
 }
 
-.contact-img{
-  grid-area: img-cont;
-  border: 1px dashed darkgoldenrod;
-  height: 200px;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
+.contact-title{
+  grid-area: title;
+  margin-top: 50px;
+  padding-left: 70px;
 }
 
-#vilnius-city{
-  width: 180px;
-  height: 180px;
-}
-  
-.contact-description{
-  grid-area: desc-cont;
-  border: 1px dashed blueviolet;
-  height: 150px;
-  padding-top: 20px;
-  padding-left: 20px;
-  font-family: Montserrat;
-}
-
-.contact-sales{
-  grid-area: btn-cont;
-  border: 1px dashed greenyellow;
-  display: flex;
-  align-items: center;
-  padding-left: 20px;
-  height: 100px;
-}
-
-
-
-.mapa{
-  grid-area: map;
-  border: 1px dashed red;
+.container-contact-section{
+  grid-area: cont;
+  padding-left: 50px;
+  padding-top: 50px;
+  width: 80%;
 }
 
 .form-main-container{
-  margin-top: 70px;
-  margin-left: 200px !important;
+  grid-area: form;
 }
 
+#cont-name{
+  display: grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: 
+  "icon desc"
+  "icon info";
+}
+
+.icon{
+  grid-area: icon;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.desc-icon{
+  grid-area: desc;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.inf-icon{
+  grid-area: info;
+  display: flex;
+  justify-content:center;
+  align-items: flex-start;
+}
+
+#name-icon, #address-icon, 
+#email-icon,#phone-icon{
+  width: 40px;
+  height: 80px;
+  color: #6FA4D6;
+}
+
+
 .form-container{
-  width: 700px; /* Ancho de tu contenedor */
-  height: 500px; /* Alto de tu contenedor */
-  background-color: #fff; /* Color de fondo del contenedor */
+  width: 450px; /* Ancho de tu contenedor */
+  height: 450px; /* Alto de tu contenedor */
+  background: linear-gradient(to bottom, #22294A, #73BADF ); /* Color de fondo del contenedor */
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Definición de la sombra */
   border-radius: 10px; /* Opcional: agregar bordes redondeados */
   margin: 20px; /* Opcional: margen exterior */
@@ -858,15 +855,45 @@ video {
   font-size: 15px;
 }
 
-.btn-send-message{
-  color:#292963;
-  font-family: Montserrat;
-  background-color: transparent;
-  width: 180px;
-  border: #292963 1px solid;
+
+  
+.css-button-sliding-to-top--blue {
+  min-width: 130px;
+  height: 40px;
+  color: #fff;
+  padding: 5px 10px;
+  
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
   border-radius: 5px;
-  font-size: 15px;
+  z-index: 0;
+  background: #fff;
+  overflow: hidden;
+  border: 2px solid transparent;
+  color: black;
+  font-family: Montserrat;
 }
+.css-button-sliding-to-top--blue:hover {
+  color: #fff;
+}
+.css-button-sliding-to-top--blue:hover:after {
+  height: 100%;
+}
+.css-button-sliding-to-top--blue:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  bottom: 0;
+  height: 0;
+  width: 100%;
+  background: #2c0b8e;
+}
+
 
 .btn-send-message:hover{
   border-color:#292963;
