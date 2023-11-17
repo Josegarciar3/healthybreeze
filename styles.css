@@ -750,6 +750,11 @@ video {
   cursor: pointer;
 }
 
+.link-cert{
+  color: black;
+  text-decoration: none;
+}
+
 #safe-tech{
   grid-area: safe;
   margin-top: 50px;
