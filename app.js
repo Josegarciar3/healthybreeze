@@ -18,8 +18,9 @@ const upload = multer({ storage: storage });
 const transporter = nodemailer.createTransport({
     service:'Gmail',
     auth:{
-        user:'josegarciar3@gmail.com',
-        pass:'aayc ievx aqnc kdpb'
+        user:'healthybreeze.lt@gmail.com',
+        pass:'HEALTHY2023'
+        // pass:'aayc ievx aqnc kdpb'
     }
 })
 
@@ -33,8 +34,8 @@ app.post('/send-email', upload.none(), (req, res)=>{
     console.log('Comentarios:', comments);
 
     const mailOptions = {
-        from: 'josegarciar3@gmail.com',
-        to: 'jose310720@icloud.com',
+        from: 'healthybreeze.lt@gmail.com',
+        to: 'info@healthybreeze.lt',
         subject: 'Nuevo mensaje del formulario',
         text: `Nombre: ${fullName}\nCorreo electronico: ${email}\nTelefono: ${phoneNumber}\nMensaje: ${comments}`,
     };

@@ -929,4 +929,19 @@ video {
   cursor: pointer;
 }
 
+/* Estilos específicos para pantallas pequeñas (ejemplo: menos de 600px) */
+@media only screen and (max-width: 600px) {
+  .nav-bar {
+    grid-template-columns: 1fr; /* Una sola columna para pantallas pequeñas */
+    height: auto; /* Ajustar altura según el contenido */
+  }
+  .carousel-healthy{
+    height: 300px;
+    margin-top: 30px;
+}
+
+  .img-carousel{
+    height: 300px;
+  }
+}
 
