@@ -176,7 +176,8 @@ h1{
     gap: 55px;
 
   }
-
+  
+  
   .description-container{
     display: flex;
     justify-content: flex-start;
@@ -938,10 +939,104 @@ video {
   .carousel-healthy{
     height: 300px;
     margin-top: 30px;
-}
+  }
 
   .img-carousel{
     height: 300px;
+  }
+  .text-supper{
+    width: 55%;
+    height: 150px;
+    font-size: 10px;
+    position: absolute;
+    top:20px;
+    right: 20px;
+  }
+  .title-banner-image{
+    font-size: medium;
+  }
+  .text-supper p {
+    font-size: small;
+  }
+  .button-supper{
+    width: auto;
+    height: auto;
+    font-size: 8px !important;
+    position: absolute;
+    align-self: center;
+    top: 115px;
+    right: 50px;
+  }
+  .text-supper-altern{
+    display: none;
+  }
+  .five-tech-list{
+    display: flex;
+    gap: 35px;
+  }
+  .five-tech-container{
+    margin-top: 50px;
+  }
+  .item-tech{
+    font-size: 25px;
+  }
+  .benefits{ 
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: 100%;
+    height: auto;
+    grid-template-areas: 
+    "title"
+    "ben-1"
+    "ben-2" 
+    "ben-3";
+  }
+  .logo-ben-container{
+    display: flex;
+    height: 250px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  .benefit-1{
+    height: auto
+  }
+  .main-section{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "about"
+    "image"
+    "btns" 
+    "main-txt";
+    grid-gap: 5px;
+    margin-top: 70px;
+    
+  }
+
+  .happy-fam{
+    height: 250px;
+    align-self: center;
+    width: 100%;
+  }
+  .representative-text{
+    
+    height: auto;
+
+  }
+  .main-image{
+    height: 300px;
+  }
+  footer{
+    padding-left: 0;
+    font-size: 15px;
+    margin-top: 50px;
+   
+}
+  footer p{
+    align-self: center;
+    padding-left: 15px;
   }
 }
 
