@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const buttonsCarousel = document.querySelectorAll(".button-supper");
+    const buttonsCarousel = document.querySelectorAll(".button-supper, .button-supper-altern");
 
     buttonsCarousel.forEach(button => {
         button.addEventListener("click", function () {
@@ -7,6 +7,14 @@ document.addEventListener("DOMContentLoaded", function () {
             window.location.href = productsPage;
         });
     });
+    // const buttonsCarousel = document.querySelectorAll(".button-supper, button-supper-altern");
+
+    // buttonsCarousel.forEach(button => {
+    //     button.addEventListener("click", function () {
+    //         const productsPage = this.getAttribute("data-target");
+    //         window.location.href = productsPage;
+    //     });
+    // });
     
 
     const buttonContactUs = document.getElementById("buttonContactUs");
