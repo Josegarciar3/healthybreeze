@@ -565,8 +565,12 @@ video {
 
 .features{
   grid-area: features;
+  gap: 10px;
   /* border: dashed 1px rgb(214, 30, 30); */
   height: 100px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
 }
 
 .product-1{
@@ -620,15 +624,8 @@ video {
   padding-top: 15px;
 }
 
-.features{
-  display: flex;
-  gap: 10px;
-  align-items: flex-end;
-  padding-left: 100px;
 
-}
-
-#item-features{
+.item-features{
   border: solid 1px #292963;
   width: auto;
   border-radius: 10px;
@@ -644,8 +641,6 @@ video {
   padding-left: 40px;
   flex-direction: column;
   font-family: Montserrat;
-  
-  
 }
 
 .description-product-2{
@@ -662,7 +657,6 @@ video {
 .image-product-1{
   height: 200px;
   width: 465px;
- 
 }
 
 .image-product-2{
@@ -1115,20 +1109,80 @@ video {
     height: 25%;
   }
 
-  .image-product-1{
-    height: 100px;
-    width: 230px;
+  .image-product-1, .image-product-2 {
+    height: 180px;
+    width: 100%;
    
   }
   
-  .image-product-2{
-    height: 100px;
-    width: 230px;
-  }
   .image-product-3{
-    height: 100px;
+    height: 180px;
+    width: 90%;
+    
+  }
+  .products-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Divide el contenedor en dos columnas iguales */
+    grid-template-areas: 
+      "product"
+      "cat-des "
+      "features "
+      "product-1 "
+      "product-2 "
+      "product-3 ";
+    
+    width: 80%;
+    margin: 30px auto;
+    height: auto;
+  }
+  .item-features{
+    border: solid 1px #292963;
+    font-size: small;
     width: auto;
     
+  }
+  .features{
+    grid-area: features;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+  }
+  .product-1, .product-2{
+    /* border: dashed 1px rgb(22, 134, 35); */
+    flex-direction: column;
+  }
+  .description-product-1, .description-product-2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  .product-3{
+    
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "image-3" 
+    "desc-3";
+    
+    
+  }
+  
+  .product-3-image{
+    grid-area: image-3;
+    /* border: 1px dashed red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  
+  .description-product-3{
+    grid-area: desc-3;
+    width: 100%;
+    /* border: 1px dashed blue; */
+    font-family: Montserrat;
   }
 }
 
