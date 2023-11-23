@@ -3,6 +3,8 @@ const multer = require('multer');
 const app = express();
 const port = 8000;
 const nodemailer = require('nodemailer');
+require('dotenv').config();
+
 
 
 
@@ -18,12 +20,17 @@ const upload = multer({ storage: storage });
 const transporter = nodemailer.createTransport({
     service:'Gmail',
     auth:{
-        user:'healthybreeze.lt@gmail.com',
-        pass:'ekwu hrue kbth kqoy'
-        // user:'josegarciar3@gmail.com',
-        // pass:'aayc ievx aqnc kdpb'
+        user:process.env.EMAIL_USER,
+        pass:process.env.EMAIL_PASS,
+       
     }
 })
+
+if (!process.env.EMAIL_USER || !process.env.EMAIL_PASS) {
+    console.error('Error: Las variables de entorno no están configuradas correctamente.');
+    process.exit(1); // Sale del proceso con un código de error
+}
+
 
 
 app.post('/send-email', upload.none(), (req, res)=>{

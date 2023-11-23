@@ -595,7 +595,7 @@ video {
 .product-3{
   display: grid;
   gap: 0px;
-  grid-template-columns: 48% 52%;
+  grid-template-columns: 46% 50%;
   grid-template-areas: 
   "image-3 desc-3";
   width: 80%;
@@ -1275,7 +1275,7 @@ video {
   
   .cont-name{
     display: grid;
-    grid-template-columns: 20% 90%;
+    grid-template-columns: 2git 0% 90%;
     grid-template-areas: 
     "icon desc"
     "icon info";
