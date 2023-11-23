@@ -511,8 +511,8 @@ video {
 .text-supper-video {
    
   position: absolute;
-  top: 200px;
-  left: 120px;
+  top: 50%;
+  left: 35%;
   color: rgba(255, 255, 255, 0.5);
   height: auto;
   display: flex;
@@ -715,6 +715,7 @@ video {
   flex-direction: column;
   justify-content: center;
   padding-left: 20px;
+  font-family: Montserrat;
 }
 
 #cert-names{
@@ -758,6 +759,7 @@ video {
 .link-cert{
   color: black;
   text-decoration: none;
+  font-family: Montserrat;
 }
 
 #safe-tech{
@@ -769,6 +771,7 @@ video {
 .safe-cont{
   margin: 0 30px;
   padding-left: 30PX;
+  font-family: Montserrat;
 }
 
 #image-safe{
@@ -804,7 +807,7 @@ video {
   grid-area: form;
 }
 
-#cont-name{
+.cont-name{
   display: grid;
   grid-template-columns: 20% 80%;
   grid-template-areas: 
@@ -1101,8 +1104,8 @@ video {
   
   .text-supper-video {
     font-size: 5vw;
-    top: 30%;
-    left: 5%;
+    top: 55%;
+    left: 35%;
   }
 
   .capa-blanca {
@@ -1270,9 +1273,58 @@ video {
     padding-left: 30PX;
   }
   
-  #image-safe{
-    width: 80px;
-    margin-bottom: 10px;
+  .cont-name{
+    display: grid;
+    grid-template-columns: 20% 90%;
+    grid-template-areas: 
+    "icon desc"
+    "icon info";
+  }
+  .contact-main-container{
+    display: grid;
+    gap:15px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "title"
+    "cont" 
+    "form";
+  }
+  
+  
+  .container-contact-section{
+    
+    padding-left: 30px;
+    padding-top: 10px;
+    width: 80%;
+  }
+  
+  .form-main-container{
+    margin-top: 30px;
+    grid-area: form;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container{
+    width: 350px; /* Ancho de tu contenedor */
+    height: 450px; /* Alto de tu contenedor */
+    background: linear-gradient(to bottom, #22294A, #73BADF ); /* Color de fondo del contenedor */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Definición de la sombra */
+    border-radius: 10px; /* Opcional: agregar bordes redondeados */
+    margin: 20px; /* Opcional: margen exterior */
+    padding: 20px; /* Opcional: espacio interior */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .send-title{
+    font-size: 30px;
+  }
+  .form-floating {
+    font-family: Montserrat;
+    font-size: 15px;
   }
 }
 
