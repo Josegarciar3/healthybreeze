@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function () {
             })
             .catch(error => {
                 console.error('Error al realizar la petición:', error);
-                alert("Error al enviar la solicitud al servidor");
+                alert("Error sending request to server.");
             });
         });
     }
