@@ -38,8 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
         buttonEmailSend.addEventListener('click', function () {
     
             const formData = new FormData(document.getElementById('form-email'));
+
+            const serverURL = "https://www.healthybreeze.lt:3000"
     
-            fetch(`http://localhost:${process.env.PORT}/send-email`, {
+            fetch(`${serverURL}/send-email`, {
                 method: 'POST',
                 body: formData
             })
