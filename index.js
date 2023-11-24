@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
     
             const formData = new FormData(document.getElementById('form-email'));
     
-            fetch('http://localhost:80/send-email', {
+            fetch(`http://localhost:${process.env.PORT}/send-email`, {
                 method: 'POST',
                 body: formData
             })

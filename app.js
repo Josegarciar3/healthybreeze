@@ -1,7 +1,7 @@
 const express = require('express');
 const multer = require('multer');
 const app = express();
-const port = 80;
+const port = process.env.PORT || 3000;
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
@@ -18,7 +18,10 @@ const storage = multer.memoryStorage(); // Guarda los datos en la memoria, puede
 const upload = multer({ storage: storage });
 
 const transporter = nodemailer.createTransport({
-    service:'Gmail',
+    host: 'smtp.gmail.com',
+    port: 465,
+    secure: true, // Usar SSL
+    
     auth:{
         user:process.env.EMAIL_USER,
         pass:process.env.EMAIL_PASS,
